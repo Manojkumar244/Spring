@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Person {
     private String name="Manoj";
-    @Autowired
+    //@Autowired
     private Vehicle vehicle;
 
 
@@ -22,6 +22,7 @@ public class Person {
     {
         System.out.println("person is created");
     }
+    @Autowired
     public void setVehicle(Vehicle vehicle)
     {
         this.vehicle=vehicle;
