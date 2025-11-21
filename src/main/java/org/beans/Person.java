@@ -18,11 +18,13 @@ public class Person {
     {
         return name;
     }
-    public Person()
+    @Autowired
+    public Person(Vehicle vehicle)
     {
+        this.vehicle=vehicle;
         System.out.println("person is created");
     }
-    @Autowired
+   // @Autowired
     public void setVehicle(Vehicle vehicle)
     {
         this.vehicle=vehicle;
@@ -32,6 +34,7 @@ public class Person {
     {
 return vehicle;
     }
+
 
 
 }
